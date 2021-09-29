@@ -101,7 +101,6 @@
 				D4C13F1EB36B1E3537B08272 /* Pods-NasaTests.debug.xcconfig */,
 				FD3BB3B9402D6A087B56810D /* Pods-NasaTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -569,7 +568,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.mayoct.Nasa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -598,7 +597,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.mayoct.Nasa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -623,7 +622,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.mayoct.NasaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nasa.app/Nasa";
 			};
@@ -649,7 +648,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.mayoct.NasaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nasa.app/Nasa";
 			};
@@ -673,7 +672,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.mayoct.NasaUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Nasa;
 			};
@@ -697,7 +696,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.mayoct.NasaUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Nasa;
 			};
