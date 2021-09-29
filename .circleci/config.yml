@@ -1,16 +1,16 @@
-# CircleCI パイプライン プロセス エンジンの最新のバージョンである 2.1 を使用します。
-# 参照: https://circleci.com/docs/ja/2.0/configuration-reference/
 version: 2.1
 
-# Orb(構成パッケージ)を使用します。
-orbs:
-  # welcome-orb の依存関係を宣言します。
-  welcome: circleci/welcome-orb@0.4.1
-
-# ジョブのオーケストレーションまたはスケジュール設定を行います。
-workflows:
-  # ワークフローに "welcome" と命名します。
-  welcome:
-    # welcome/run ジョブを専用のコンテナで実行します。
-    jobs:
-      - welcome/run
+jobs: # 1回の実行の基本作業単位
+  build:  # "workflows" を使用しない実行ではエントリ ポイントとして "build" ジョブが必要です。
+    macos:  # macOS Executor の仕様を指定します。
+      xcode: 12.4.0
+    steps:  # 実行する一連のコマンド
+      - checkout  # バージョン管理システムからコードをプルします
+      - run:
+          # Xcode の CLI ツール "xcodebuild" を使用してテストを実行します。
+          name: 単体テストの実行
+          command: xcodebuild test -workspace Nasa.xcworkspace -scheme Nasa -destination 'platform=iOS Simulator,name=iPhone 12,OS=14.4'
+      - run:
+          # アプリケーションをビルドします。
+          name: アプリケーションのビルド
+          command: xcodebuild -workspace Nasa.xcworkspace -scheme Nasa
