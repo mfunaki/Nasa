@@ -1,6 +1,6 @@
 # Uncomment the next line to define a global platform for your project
 # プロジェクトのグローバル プラットフォームを定義する場合、次の行のコメントを外す
-platform :ios, '14.4'
+platform :ios, '14.5'
 
 target 'Nasa' do
   # Comment the next line if you don't want to use dynamic frameworks

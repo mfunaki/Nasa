@@ -9,7 +9,7 @@ jobs: # 1回の実行の基本作業単位
       - run:
           # Xcode の CLI ツール "xcodebuild" を使用してテストを実行します。
           name: 単体テストの実行
-          command: xcodebuild test -workspace Nasa.xcworkspace -scheme Nasa -destination 'platform=iOS Simulator,name=iPhone 12,OS=14.4'
+          command: xcodebuild test -workspace Nasa.xcworkspace -scheme Nasa -destination 'platform=iOS Simulator,name=iPhone 12,OS=14.5'
       - run:
           # アプリケーションをビルドします。
           name: アプリケーションのビルド
