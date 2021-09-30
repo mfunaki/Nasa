@@ -3,7 +3,7 @@ version: 2.1
 jobs: # 1回の実行の基本作業単位
   build:  # "workflows" を使用しない実行ではエントリ ポイントとして "build" ジョブが必要です。
     macos:  # macOS Executor の仕様を指定します。
-      xcode: 12.4.0
+      xcode: 12.5.1
     steps:  # 実行する一連のコマンド
       - checkout  # バージョン管理システムからコードをプルします
       - run:
