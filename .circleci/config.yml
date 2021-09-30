@@ -13,4 +13,4 @@ jobs: # 1回の実行の基本作業単位
       - run:
           # アプリケーションをビルドします。
           name: アプリケーションのビルド
-          command: xcodebuild -workspace Nasa.xcworkspace -scheme Nasa
+          command: xcodebuild -workspace Nasa.xcworkspace -scheme Nasa -allowProvisioningUpdates
